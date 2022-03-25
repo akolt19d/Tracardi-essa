@@ -1,5 +1,9 @@
+<script>
+    const liElements = ["Home", "How it works", "Contact", "Docs"]
+</script>
+
 <nav>
-    <img src="/static/logo.svg" alt="Tracardi logo">
+    <img src={`./logo.svg`} alt="Tracardi logo">
     <h3 class="blue">TRACARDI</h3>
     <ul>
         {#each liElements as liText}
@@ -8,9 +12,6 @@
     </ul>
 </nav>
 <slot></slot>
-<script>
-    const liElements = ["Home", "How it works", "Contact", "Docs"]
-</script>
 
 <style lang="scss">
     nav
