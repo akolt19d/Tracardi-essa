@@ -45,7 +45,7 @@
         }
         .nocode-wrapper 
         {
-            background-color: $orange;
+            background-color: $yellow;
             width: 50%;
             height: 60vh;
             @include fc;
@@ -56,12 +56,23 @@
             line-height: 2.5rem;
             padding: 2rem 0 0 2rem;
             //color: white;
+            h3, p 
+            {
+                background-image: linear-gradient(to right, white, white 55%, #111 55%, #111 80%, white 80%, $yellow 80%, $yellow 85%, white 85%);
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                background-size: 300% 100%;
+                animation: 4s nocode alternate infinite linear;
+            }
             h3
             {
                 font-size: 660%;
                 @include fc;
                 margin-left: 6rem;
                 height: 6rem;
+                animation-delay: .4s;
+                animation-duration: 5s;
             }
             p 
             {
@@ -73,14 +84,6 @@
                     transform: rotate(-90deg) translateY(1rem) translateX(-1rem);
                     transform-origin: left;
                 }
-            }
-            h3, p 
-            {
-                background-image: linear-gradient(to right, white, white 55%, #111 55%, #111 80%, white 80%, white 95%, $yellow 95%);
-                color: transparent;
-                -webkit-background-clip: text;
-                background-size: 100% 100%;
-                animation: 1s nocode alternate infinite;
             }
             .len{
                 width: 30rem;

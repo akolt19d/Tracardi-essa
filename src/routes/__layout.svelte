@@ -1,4 +1,6 @@
 <nav>
+    <img src="/static/logo.svg" alt="Tracardi logo">
+    <h3 class="blue">TRACARDI</h3>
     <ul>
         {#each liElements as liText}
         <li>{liText}</li>
@@ -23,6 +25,10 @@
         top: 0;
         left: 0;
         z-index: 1000;
+        h3 
+        {
+            margin: 0 2rem 0 .3rem;
+        }
         ul 
         {
             display: flex;

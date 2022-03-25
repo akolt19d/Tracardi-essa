@@ -2,7 +2,7 @@
 <h2>How is this all possible</h2>
 <div class="containerForCon">
 <h2>How Tracardi works?</h2>
-<p>Tracardi <span style="color: #FFDB5B;"> collects events</span> that happen across multiple channels. Then is sends them to a visual editor where you can process it, orchestrate to other systems such as AI product referral systems, or interact with the user directly via micro front-ends</p>
+<p>Tracardi <span class="orange"> collects events</span> that happen across multiple channels. Then is sends them to a visual editor where you can process it, orchestrate to other systems such as AI product referral systems, or interact with the user directly via micro front-ends</p>
 <h2>How much does it costs? </h2>
 <p>It is up to you. TRACARDI is a <span class="free"> free software</span> as long as you install it on premises and maintain it yourself. For cloud solutions please contact us.</p>
 <h2 class="szer">Can i intergrate it on my old school web page? </h2>

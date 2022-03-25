@@ -32,19 +32,21 @@
 <style lang="scss">
     .container{
         width: 100%;
-        background: #3B78ED;
-        min-height: 100vh;
-        margin-top: 15vh;
+        //background: #3B78ED;
+        //min-height: 100vh;
+        margin-top: 12rem;
+        padding: 5rem 0;
         .conForData{
             display: flex;
             width: 80%;
-            margin-left: 10%;
+            margin: 3rem 10%;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 12px;
+            gap: 3rem 1.75rem;
             div{
                 flex-basis: 26%;
-                margin-top: 15vh;
+                min-width: 30rem;
+                //margin: 5rem 0;
                 background-color: #2A68DD;
                 padding: 20px;
                 align-items: center;

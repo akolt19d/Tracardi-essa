@@ -7,6 +7,7 @@
         <input type="email" placeholder="Enter your email">
         <button>Get Started</button>
     </div>
+    <video autoplay muted loop src="static/Comp_2.webm"></video>
 </header>
 <style lang="scss">
     header
@@ -15,9 +16,12 @@
         @include fc;
         @include section-width;
         text-align: center;
+        overflow-x: hidden;
         div 
         {
+            z-index: 2;
             position: absolute;
+            transform: translateY(-15vh);
             h1  
             {
                 color: $blue;
@@ -51,12 +55,20 @@
                 @include button-effects;
             }
         }
+        video
+        {
+            position: absolute;
+            top: 40vh;
+            width: 70vw;
+        }
         p 
         {
+            z-index: 2;
             position: relative;
             bottom: 10rem;
             font-size: 90%;
             font-weight: 500;
+            transform: translateY(-12vh);
         }
     }
 </style>

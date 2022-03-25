@@ -6,6 +6,7 @@
     import Possible from '../components/Possible.svelte'
     import Launch from '../components/Launch.svelte'
     import Database from '../components/Database.svelte';
+    import Footer from '../components/Footer.svelte';
 </script>
 
 <Header />
@@ -14,7 +15,10 @@
 <ExternalSystems/>
 <Possible/>
 <Launch/>
-<Database/>
+<section class="outer-container">
+    <Database/>
+    <Footer />
+</section>
 
 <style lang="scss">
     :global(*)
@@ -39,5 +43,9 @@
     :global(.orange)
     {
         color: $orange;
+    }
+    .outer-container 
+    {
+        background-image: linear-gradient(to bottom, $blue 30%, rgb(255, 94, 148));
     }
 </style>
