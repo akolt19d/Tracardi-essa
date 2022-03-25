@@ -1,14 +1,20 @@
 <script>
-    import Nav from '../components/Nav.svelte'
     import Header from '../components/Header.svelte'
     import CustomerData from '../components/CustomerData.svelte'
     import NoCode from '../components/NoCode.svelte'
+    import ExternalSystems from '../components/ExternalSystems.svelte'
+    import Possible from '../components/Possible.svelte'
+    import Launch from '../components/Launch.svelte'
+    import Database from '../components/Database.svelte';
 </script>
 
-<Nav />
 <Header />
 <CustomerData />
 <NoCode />
+<ExternalSystems/>
+<Possible/>
+<Launch/>
+<Database/>
 
 <style lang="scss">
     :global(*)

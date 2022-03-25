@@ -1,4 +1,4 @@
-<main>
+<header>
     <p>
         Tracardi is an open-source <span class="blue">customer data platform</span> to help you engage your customers and build your sales through automated digital experiences.
     </p>
@@ -7,9 +7,9 @@
         <input type="email" placeholder="Enter your email">
         <button>Get Started</button>
     </div>
-</main>
+</header>
 <style lang="scss">
-    main
+    header
     {
         min-height: 100vh;
         @include fc;
