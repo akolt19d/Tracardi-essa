@@ -7,12 +7,18 @@
     import Launch from '../components/Launch.svelte'
     import Database from '../components/Database.svelte';
     import Footer from '../components/Footer.svelte';
+    import OneAPI from '../components/OneAPI.svelte'
 </script>
+
+<svelte:head>
+    <title>Tracardi</title>
+</svelte:head>
 
 <Header />
 <CustomerData />
 <NoCode />
 <ExternalSystems/>
+<OneAPI />
 <Possible/>
 <Launch/>
 <section class="outer-container">
@@ -43,6 +49,10 @@
     :global(.orange)
     {
         color: $orange;
+    }
+    :global(h1, h2, h3, h4, h5, h6)
+    {
+        font-family: $headline !important;
     }
     .outer-container 
     {

@@ -1,6 +1,12 @@
+<script>
+    import Transition2 from './svg/transition2.svelte'
+</script>
+
 <section class="container">
+    <div class="transition">
+        <Transition2 />
+    </div>
     <h2>INTERGRATE EXTERNAL   <span class="white">   SYSTEMS</span></h2>
-    <div class="blueSquare"></div>
     <div class="containerForContent">
         <div class="conForText">
             <p class="fat">Use the <span class="blue">social media, SaaS, AI</span> to boost your sales. Integrate any system with your e-commerce solution.</p>
@@ -8,17 +14,20 @@
         </div>
     </div>
 </section>
+
 <style lang="scss">
     .container{
         width: 100%;
-        margin-top: 10vh;
+        //margin-top: 10vh;
         position: relative;
+        .transition
+        {
+            height: 45vh;
+            position: relative;
+        }
         h2{
             font-size: 4rem;
             text-align: center;
-            .white{
-                color: white !important;
-            }
         }
         .containerForContent{
             display: flex;
@@ -44,15 +53,6 @@
                     }
                 }
             }
-        }
-        .blueSquare{
-            position: absolute;
-            width: 350px;
-            height: 130px;
-            z-index: -1;
-            background-color: $blue;
-            right: 12.3vw;
-            top: 0;
         }
     }
 </style>

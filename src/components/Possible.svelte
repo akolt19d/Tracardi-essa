@@ -18,7 +18,6 @@
 <style lang="scss">
 .container{
     width: 100%;
-    margin-top: 40vh;
     h2{
         text-align: center;
         font-size:3rem;

@@ -17,7 +17,7 @@
     nav
     {
         width: 100%;
-        min-height: 12vh;
+        min-height: 8rem;
         @include fc;
         background: darken($bg-l, 1);
         margin: 0;

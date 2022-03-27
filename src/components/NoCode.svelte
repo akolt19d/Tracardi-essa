@@ -14,10 +14,10 @@
     section 
     {
         background-color: $yellow;
-        min-height: 120vh;
+        min-height: 60vh;
         .inner-wrapper
         {
-            min-height: 100vh;
+            min-height: 60vh;
             @include section-width;
             .developer{
                 margin-top: 30px;
@@ -63,7 +63,7 @@
                 -webkit-background-clip: text;
                 background-clip: text;
                 background-size: 300% 100%;
-                animation: 4s nocode alternate infinite linear;
+                animation: 2.5s nocode alternate infinite linear;
             }
             h3
             {
@@ -72,7 +72,7 @@
                 margin-left: 6rem;
                 height: 6rem;
                 animation-delay: .4s;
-                animation-duration: 5s;
+                animation-duration: 3s;
             }
             p 
             {
