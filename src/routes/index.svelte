@@ -40,7 +40,6 @@
         transition: $theme-fade;
         overflow-x: hidden;
         font-family: $font;
-        min-height: 500vh;
     }
     :global(.blue)
     {

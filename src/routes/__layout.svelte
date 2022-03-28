@@ -1,14 +1,16 @@
-<script>
-    const liElements = ["Home", "How it works", "Contact", "Docs"]
-</script>
-
 <nav>
     <img src={`./logo.svg`} alt="Tracardi logo">
     <h3 class="blue">TRACARDI</h3>
     <ul>
-        {#each liElements as liText}
-        <li>{liText}</li>
-        {/each}
+        <a href="/">
+            <li>Home</li>
+        </a>
+            <li>Customers</li>
+            <li>Contact</li>
+            <li>Docs</li>
+        <a href="/pricing">
+            <li>Pricing</li>
+        </a>
     </ul>
 </nav>
 <slot></slot>
@@ -17,7 +19,7 @@
     nav
     {
         width: 100%;
-        min-height: 8rem;
+        min-height: 6rem;
         @include fc;
         background: darken($bg-l, 1);
         margin: 0;
@@ -35,6 +37,10 @@
             display: flex;
             justify-content: space-evenly;
             list-style: none;
+            a{
+                text-decoration: none;
+                color: black;
+            }
             li 
             {
                 margin: 20px;

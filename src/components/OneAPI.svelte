@@ -36,6 +36,11 @@ analytics.page(<span class="orange">'user-1023'</span>, <span class='orange'>'Ho
     </div>
 </section>
 
+<script>
+     import { fade } from 'svelte/transition';
+	let visible = true; // jakiś fade na scroll 
+</script>
+
 <style lang="scss">
     section
     {
@@ -93,6 +98,7 @@ analytics.page(<span class="orange">'user-1023'</span>, <span class='orange'>'Ho
                     aspect-ratio: 1/1;
                     box-shadow: 0 .5rem .75rem rgba($color: #000000, $alpha: .1);
                     border-radius: .5rem;
+                    cursor: pointer;
                     @include fc;
                 }
             }
