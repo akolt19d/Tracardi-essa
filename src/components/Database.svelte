@@ -1,4 +1,11 @@
+<script>
+    import Transition from './svg/transition3.svelte'
+</script>
+
 <section class="container">
+    <div class="transition">
+        <Transition />
+    </div>
     <div class="conForData">
         <div>
             <h2>Siema1</h2>
@@ -26,9 +33,7 @@
         </div>
     </div>
 </section>
-<script>
-    // no oczywiście trzeba tutaj zmapować bo html wygląda jak kupsko
-</script>
+
 <style lang="scss">
     .container{
         width: 100%;
@@ -36,6 +41,17 @@
         //min-height: 100vh;
         margin-top: 12rem;
         padding: 5rem 0;
+        position: relative;
+        background-color: $blue;
+        .transition 
+        {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: white;
+            width: 100%;
+            height: 50vh;
+        }
         .conForData{
             display: flex;
             width: 80%;
@@ -47,11 +63,12 @@
                 flex-basis: 26%;
                 min-width: 30rem;
                 //margin: 5rem 0;
-                background-color: #2A68DD;
+                background-color: darken($blue, 8);
                 padding: 20px;
                 align-items: center;
                 display: flex;
                 flex-direction: column;
+                z-index: 1;
                 h2{
                     margin-top: 2vh;
                 }

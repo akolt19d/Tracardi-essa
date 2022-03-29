@@ -47,7 +47,7 @@
         {
             background-color: $yellow;
             width: 50%;
-            height: 60vh;
+            height: 30rem;
             @include fc;
             justify-content: end;
             flex-direction: column;
@@ -90,6 +90,7 @@
             }
             .hei{
                 margin-left: -185px;
+                border-right: 3px solid white;
             }
             
         }

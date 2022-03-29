@@ -55,6 +55,7 @@
     }
     .outer-container 
     {
-        background-image: linear-gradient(to bottom, $blue 30%, rgb(255, 94, 148));
+        //background-image: linear-gradient(to bottom, $blue 30%, rgb(255, 94, 148));
+        background-color: #111;
     }
 </style>

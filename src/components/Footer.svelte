@@ -1,4 +1,11 @@
+<script>
+    import Transition from './svg/transition4.svelte'
+</script>
+
 <footer>
+    <div class="transition">
+        <Transition />
+    </div>
     <div class="headline">
         <h3>TRACARDI</h3>
         <div>
@@ -63,6 +70,15 @@
         width: 100vw;
         padding: 8rem;
         padding-bottom: 3rem;
+        position: relative;
+        .transition 
+        {
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+            width: 100%;
+            height: 10vh;
+        }
         .headline
         {
             margin: 5rem 0;
