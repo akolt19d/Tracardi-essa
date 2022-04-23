@@ -2,11 +2,13 @@
 	import Content from '../components/CustomersSection/content.svelte';
 	import Retail from '../components/CustomersSection/retail.svelte';
 	import FinancialServices from '../components/CustomersSection/FinancialServices.svelte';
+	import Tracardiuse from '../components/CustomersSection/Tracardiuse.svelte';
 </script>
 
 <Content />
 <Retail />
 <FinancialServices />
+<Tracardiuse />
 
 <style lang="scss">
 	:global(*) {

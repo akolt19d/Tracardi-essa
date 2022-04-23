@@ -1,3 +1,4 @@
+<div class="kreska" />
 <div class="conContent">
 	<svg
 		width="1710"
@@ -88,20 +89,32 @@
 </div>
 
 <style lang="scss">
+	.kreska {
+		position: absolute;
+		width: 1px;
+		opacity: 0.3;
+		height: 460vh;
+		background-color: #d8d8d8;
+		left: 50%;
+		z-index: 0;
+	}
 	.conContent {
 		@include vert;
 		svg {
 			color: wheat;
 			margin-left: -5px;
+			z-index: 1;
 		}
 		.smt {
 			width: 20%;
 			margin: 100px 0;
 			height: 9.5vh;
+			z-index: 1;
 			color: $dark-blue;
 			background-color: $dark-theme;
 			border: 0;
 			font-weight: bold;
+			box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
 			font-size: 20px;
 			letter-spacing: 0.5px;
 			display: flex;
