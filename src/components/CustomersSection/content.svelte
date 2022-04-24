@@ -1,13 +1,6 @@
 <div class="kreska" />
 <div class="conContent">
-	<svg
-		width="1710"
-		height="634"
-		viewBox="0 0 1920 634"
-		fill="none"
-		xmlns="http://www.w3.org/2000/svg"
-		class="svgCon"
-	>
+	<svg viewBox="0 0 1920 634" fill="none" xmlns="http://www.w3.org/2000/svg" class="svgCon">
 		<g filter="url(#filter0_d_307_452)">
 			<path
 				d="M880.531 515.32L377 578.08L3.91771 489.993L3.91129 147.293L3.90887 13.1487L1947.99 13.1848L1948 610L1693.19 578.104L1387.62 515.329L880.531 515.32Z"
@@ -104,6 +97,7 @@
 			color: wheat;
 			margin-left: -5px;
 			z-index: 1;
+			width: 100%;
 		}
 		.smt {
 			width: 20%;

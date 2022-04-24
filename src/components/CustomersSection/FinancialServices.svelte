@@ -129,4 +129,9 @@
 			}
 		}
 	}
+	@media (min-width: 2200px) {
+		.container {
+			margin-top: 50vh;
+		}
+	}
 </style>

@@ -3,12 +3,14 @@
 	import Retail from '../components/CustomersSection/retail.svelte';
 	import FinancialServices from '../components/CustomersSection/FinancialServices.svelte';
 	import Tracardiuse from '../components/CustomersSection/Tracardiuse.svelte';
+	import Footer from '../components/CustomersSection/footer.svelte';
 </script>
 
 <Content />
 <Retail />
 <FinancialServices />
 <Tracardiuse />
+<Footer />
 
 <style lang="scss">
 	:global(*) {

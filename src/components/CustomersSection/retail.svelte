@@ -1,10 +1,4 @@
-<svg
-	width="1920"
-	height="1331"
-	viewBox="0 0 1920 1331"
-	fill="none"
-	xmlns="http://www.w3.org/2000/svg"
->
+<svg viewBox="0 0 1920 1331" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<g filter="url(#filter0_d_433_85)">
 		<path
 			d="M818.203 158.957L343.952 89.2432L-10.7132 132.67L-10.9432 452.054L-11.0335 574.043L1944.6 572.737L1945 30L1686.38 88.3693L1381.53 158.591L818.203 158.957Z"
@@ -98,9 +92,10 @@
 <style lang="scss">
 	svg {
 		margin-top: 20vh;
+		width: 100%;
 	}
 	.container {
-		margin-top: -120vh;
+		margin-top: -110vh;
 		background-color: $dark-theme;
 		@include vert;
 		button {
