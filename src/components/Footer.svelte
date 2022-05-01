@@ -149,7 +149,15 @@
                     {
                         margin: 3rem 0;
                     }
+                    h5 
+                    {
+                        color: $yellow;
+                    }
                 }
+            }
+            div:last-child 
+            {
+                opacity: 50%;
             }
         }
         .end 
@@ -160,6 +168,70 @@
             * 
             {
                 display: flex;
+            }
+            .icons 
+            {
+                color: $yellow;
+            }
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        footer 
+        {
+            padding: 0;
+            .headline 
+            {
+                margin: 2rem 0;
+                flex-direction: column;
+                h3 
+                {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 200%;
+                }
+                div 
+                {
+                    @include fc;
+                    flex-direction: column;
+                    *
+                    {
+                        margin: .5rem 0;
+                    }
+                }
+            }
+            .contact 
+            {
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                margin: 1rem 0;
+                .inner-wrapper 
+                {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    width: 100%;
+                    margin-bottom: 1rem;
+                    .ul-wrapper
+                    {
+                        margin: 0 1rem;
+                        * 
+                        {
+                            margin: 1rem 0;
+                        }
+                    }
+                }
+                div:last-child 
+                {
+                    @include fc;
+                    flex-direction: column-reverse;
+                }
+            }
+            .end 
+            {
+                margin-top: 2rem;
+                flex-direction: column;
+                align-items: center;
             }
         }
     }

@@ -37,8 +37,8 @@
 <style lang="scss">
     .container{
         width: 100%;
-        //background: #3B78ED;
-        //min-height: 100vh;
+        background: #3B78ED;
+        min-height: 80vh;
         margin-top: 12rem;
         padding: 5rem 0;
         position: relative;
@@ -50,14 +50,16 @@
             top: 0;
             background: white;
             width: 100%;
-            height: 50vh;
+            height: 22vh;
         }
         .conForData{
             display: flex;
             width: 80%;
+            min-height: 60vh;
             margin: 3rem 10%;
             flex-wrap: wrap;
             justify-content: center;
+            //@include fc;
             gap: 3rem 1.75rem;
             div{
                 flex-basis: 26%;

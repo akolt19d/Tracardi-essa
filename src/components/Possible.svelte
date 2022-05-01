@@ -18,6 +18,8 @@
 <style lang="scss">
 .container{
     width: 100%;
+    @include fc;
+    flex-direction: column;
     h2{
         text-align: center;
         font-size:3rem;
@@ -28,7 +30,6 @@
         flex-direction: column;
         margin-top: 10vh;
         width: 40%;
-        margin-left: 33.7%; //do poprawy zmienic na flexa czy coś
         p{
             margin-top: 5vh;
             text-align: left;
@@ -59,6 +60,17 @@
         cursor: pointer;
         font-size: 15px;
         font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container 
+    {
+        .containerForCon 
+        {
+            width: 90%;
+            margin: 0;
+        }
     }
 }
 </style>

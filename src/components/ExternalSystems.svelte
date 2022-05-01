@@ -55,4 +55,31 @@
             }
         }
     }
+
+    @media screen and (max-width: 800px) {
+        .container 
+        {
+            .transition 
+            {
+                height: 15vh;
+            }
+            h2 
+            {
+                font-size: 220%;
+            }
+            .containerForContent
+            {
+                justify-content: center;
+                flex-direction: column-reverse;
+                align-items: center;
+                .conForText
+                {
+                    margin: 0 !important;
+                    max-width: 90%;
+                    width: 30rem;
+                    font-size: 100%;
+                }
+            }
+        }
+    }
 </style>

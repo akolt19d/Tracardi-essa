@@ -4,7 +4,7 @@
 	import NoCode from '../components/NoCode.svelte';
 	import ExternalSystems from '../components/ExternalSystems.svelte';
 	import Possible from '../components/Possible.svelte';
-	import Launch from '../components/Launch.svelte';
+	//import Launch from '../components/Launch.svelte';
 	import Database from '../components/Database.svelte';
 	import Footer from '../components/Footer.svelte';
 	import OneAPI from '../components/OneAPI.svelte';
@@ -20,7 +20,7 @@
 <ExternalSystems />
 <OneAPI />
 <Possible />
-<Launch />
+<!-- <Launch /> -->
 <section class="outer-container">
 	<Database />
 	<Footer />

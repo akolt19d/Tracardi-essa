@@ -4,7 +4,7 @@
 		customers and build your sales through automated digital experiences.
 	</p>
 	<div>
-		<h1>TRACARDI</h1>
+		<!-- <h1>TRACARDI</h1> -->
 		<input type="email" placeholder="Enter your email" />
 		<button>Get Started</button>
 	</div>
@@ -22,10 +22,6 @@
 			z-index: 2;
 			position: absolute;
 			transform: translateY(-15vh);
-			h1 {
-				color: $blue;
-				font-size: 4.4rem;
-			}
 			input {
 				outline: none;
 				padding: 0.8rem 1.8rem;
@@ -64,7 +60,7 @@
 			bottom: 10rem;
 			font-size: 90%;
 			font-weight: 500;
-			transform: translateY(-12vh);
+			transform: translateY(-8vh);
 		}
 	}
 </style>

@@ -104,13 +104,45 @@ analytics.page(<span class="orange">'user-1023'</span>, <span class='orange'>'Ho
             }
             .code
             {
-                width: 70%;
-                aspect-ratio: 2/1;
+                // width: 70%;
+                // aspect-ratio: 2/1;
                 background-color: #111;
                 color: lighten($blue, 40);
                 @include fc;
                 font-size: 150%;
                 border-radius: .5rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        section 
+        {
+            grid-template-columns: auto;
+            grid-template-rows: repeat(2, 1fr);
+            margin: 3rem 0;
+            .left-section 
+            {
+                border: 0;
+                div 
+                {
+                    h3 
+                    {
+                        font-size: 240%;
+                    }
+                    h4 
+                    {
+                        font-size: 220%;
+                    }
+                    p 
+                    {
+                        margin: 2rem 0;
+                    }
+                }
+            }
+            .right-section 
+            {
+                
             }
         }
     }
