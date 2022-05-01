@@ -8,7 +8,7 @@
 		<input type="email" placeholder="Enter your email" />
 		<button>Get Started</button>
 	</div>
-	<video autoplay muted loop src={`./Comp_2.webm`} />
+	<video autoplay muted loop src={`./webmzAlpha.webm`} />
 </header>
 
 <style lang="scss">
