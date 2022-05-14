@@ -71,6 +71,7 @@
         padding: 8rem;
         padding-bottom: 3rem;
         position: relative;
+        overflow-x: hidden;
         .transition 
         {
             // position: absolute;
@@ -92,7 +93,7 @@
             {
                 outline: none;
                 padding: 1.4rem 2rem;
-                background: rgba($color: #fff, $alpha: .05);
+                background: rgba($color: #fff, $alpha: .95);
                 border: 0;
                 border-radius: 1rem;
                 text-align: center;

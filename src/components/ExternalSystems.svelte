@@ -11,6 +11,7 @@
         <div class="conForText">
             <p class="fat">Use the <span class="blue">social media, SaaS, AI</span> to boost your sales. Integrate any system with your e-commerce solution.</p>
             <p class="small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            <a href="/">Explore Tracardi for external systems.</a>
         </div>
     </div>
 </section>
@@ -44,6 +45,7 @@
                 font-size: 18px;
                 .small{
                     color: grey;
+                    margin-bottom: 3.3rem;
                 }
                 .fat{
                     font-weight: bold;
@@ -51,6 +53,10 @@
                     .blue{
                         color: $blue;
                     }
+                }
+                a 
+                {
+                    color: $blue;
                 }
             }
         }

@@ -20,6 +20,7 @@
     width: 100%;
     @include fc;
     flex-direction: column;
+    overflow-x: hidden;
     h2{
         text-align: center;
         font-size:3rem;
@@ -30,6 +31,7 @@
         flex-direction: column;
         margin-top: 10vh;
         width: 40%;
+        transform: translateX(10rem);
         p{
             margin-top: 5vh;
             text-align: left;
@@ -39,8 +41,32 @@
             text-align: left;
             font-size: 2.2rem;
             margin-top: 10vh;
+            position: relative;
             &:first-child{
                 margin-top: 2vh;
+                &::before
+                {
+                    background-color: #111;
+                }
+            }
+            &::before
+            {
+                content: '';
+                position: absolute;
+                left: -10rem;
+                top: -1rem;
+                height: 5rem;
+                aspect-ratio: 1/1;
+                background-color: $blue;
+                border-radius: 10px;
+                box-shadow: 0 0 10px 0 rgba(black, .5);
+            }
+            &:last-of-type
+            {
+                &::before
+                {
+                    background-color: $yellow;
+                }
             }
         }
         .szer{

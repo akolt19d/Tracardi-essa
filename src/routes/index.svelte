@@ -8,6 +8,7 @@
 	import Database from '../components/Database.svelte';
 	import Footer from '../components/Footer.svelte';
 	import OneAPI from '../components/OneAPI.svelte';
+	import Partners from '../components/Partners.svelte'
 </script>
 
 <svelte:head>
@@ -19,6 +20,7 @@
 <NoCode />
 <ExternalSystems />
 <OneAPI />
+<Partners />
 <Possible />
 <!-- <Launch /> -->
 <section class="outer-container">

@@ -1,4 +1,5 @@
 <header>
+	<h1>TRACARDI</h1>
 	<p>
 		Tracardi is an open-source <span class="blue">customer data platform</span> to help you engage your
 		customers and build your sales through automated digital experiences.
@@ -13,15 +14,26 @@
 
 <style lang="scss">
 	header {
-		min-height: 100vh;
-		@include fc;
+		position: relative;
+		top: 12vh;
+		min-height: 80vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		// @include fc;
 		@include section-width;
 		text-align: center;
-		overflow-x: hidden;
+		// overflow-x: hidden;
+		h1 
+		{
+			font-size: 400%;
+			color: $blue;
+			font-weight: 500;
+		}
 		div {
 			z-index: 2;
-			position: absolute;
-			transform: translateY(-15vh);
+			// position: absolute;
+			// transform: translateY(-15vh);
 			input {
 				outline: none;
 				padding: 0.8rem 1.8rem;
@@ -50,17 +62,29 @@
 			}
 		}
 		video {
-			position: absolute;
-			top: 40vh;
+			 position: absolute;
+			top: 8vh;
 			width: 70vw;
+			margin: auto;
+			// display: none;
 		}
 		p {
 			z-index: 2;
 			position: relative;
-			bottom: 10rem;
+			// bottom: 10rem;
 			font-size: 90%;
 			font-weight: 500;
-			transform: translateY(-8vh);
+			// transform: translateY(-8vh);
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		header 
+		{
+			video 
+			{
+				display: none;
+			}
 		}
 	}
 </style>

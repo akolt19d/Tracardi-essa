@@ -8,20 +8,34 @@
         <p class="developer">You <span style="color: black;"> don't have a developer</span> department, that's not a problem, integrate and run TRACARDI without writing any code.</p>
         <button class="btnDev">See how it works</button>  
     </div>
+    <img src="./noCodeMockup.png" alt="No Code Mockup">
 </section>
 
 <style lang="scss">
     section 
     {
         background-color: $yellow;
-        min-height: 60vh;
+        position: relative;
+        // min-height: 60vh;
+        img 
+        {
+            position: absolute;
+            top: 0;
+            right: 5rem;
+            width: 66rem;
+            max-width: 90%;
+            filter: drop-shadow(0px 0px 10px rgba(black, .5));
+        }
         .inner-wrapper
         {
-            min-height: 60vh;
-            @include section-width;
+            min-height: 30vh;
+            // @include section-width;
+            position: relative;
+            left: 17.5%;
+            top: 2vh;
             .developer{
                 margin-top: 30px;
-                width: 40%;
+                width: 20%;
                 text-align: justify;
                 font-size: 20px;
                 color: white;

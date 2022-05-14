@@ -51,7 +51,7 @@
 
 <section>
 	<div class="cd-text">
-		<h3>What is <span class="blue">customer data?</span></h3>
+		<h3>What is <span class="orange">customer data?</span></h3>
 		<p>
 			Every marketing and analytics app runs on the same three types of data: who your users are,
 			what they are doing, and where are they whilst doing it. Collect it once with Tracardi and
@@ -59,8 +59,8 @@
 		</p>
 	</div>
 	<div>
-		<hr />
-		<hr />
+		<!-- <hr />
+		<hr /> -->
 	</div>
 	<div class="cards">
 		{#each tabOfData as item}
@@ -103,13 +103,17 @@
 		@include section-width;
 		margin-top: 20vh;
 		.cd-text {
-			max-width: 33rem;
 			margin: auto;
 			h3 {
 				text-align: center;
 				font-weight: bold;
-				font-size: 200%;
+				font-size: 340%;
 				margin-bottom: 2rem;
+			}
+			p 
+			{
+				max-width: 33rem;
+				margin: auto;
 			}
 		}
 		div {
@@ -173,6 +177,7 @@
 			flex-direction: column;
 			justify-content: space-evenly;
 			align-items: flex-end;
+			// overflow-x: hidden;
 			.square {
 				aspect-ratio: 1/1;
 				background-color: $yellow;

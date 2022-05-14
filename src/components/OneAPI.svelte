@@ -15,13 +15,12 @@
         </div>
     </div>
     <div class="right-section">
-        <div class="buttons">
-            <div>o</div>
-            <div>m</div>
-            <div>a</div>
-            <div>g</div>
-            <div>a</div>
-            <div>d</div>
+        <div class="buttons" id="oneApi-buttons">
+            {#each files as file}
+                <div>
+                    <img src="./{file}.png" alt={file}>
+                </div>
+            {/each}
         </div>
         <div class="code">
             <code>
@@ -39,6 +38,8 @@ analytics.page(<span class="orange">'user-1023'</span>, <span class='orange'>'Ho
 <script>
      import { fade } from 'svelte/transition';
 	let visible = true; // jakiś fade na scroll 
+
+    const files = ['android-logo', 'js', 'apple', 'php', 'python', 'ruby']
 </script>
 
 <style lang="scss">
@@ -50,6 +51,7 @@ analytics.page(<span class="orange">'user-1023'</span>, <span class='orange'>'Ho
         max-width: 90vw;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        overflow-x: hidden;
         .left-section
         {
             //background-color: aquamarine;
@@ -100,6 +102,10 @@ analytics.page(<span class="orange">'user-1023'</span>, <span class='orange'>'Ho
                     border-radius: .5rem;
                     cursor: pointer;
                     @include fc;
+                    img 
+                    {
+                        width: 70%;
+                    }
                 }
             }
             .code
@@ -111,6 +117,7 @@ analytics.page(<span class="orange">'user-1023'</span>, <span class='orange'>'Ho
                 @include fc;
                 font-size: 150%;
                 border-radius: .5rem;
+                padding: 1rem 2rem;
             }
         }
     }
@@ -140,10 +147,10 @@ analytics.page(<span class="orange">'user-1023'</span>, <span class='orange'>'Ho
                     }
                 }
             }
-            .right-section 
-            {
+            // .right-section 
+            // {
                 
-            }
+            // }
         }
     }
 </style>

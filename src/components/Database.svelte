@@ -43,6 +43,7 @@
         padding: 5rem 0;
         position: relative;
         background-color: $blue;
+        color: white;
         .transition 
         {
             position: absolute;
@@ -59,13 +60,14 @@
             margin: 3rem 10%;
             flex-wrap: wrap;
             justify-content: center;
+            overflow-x: hidden;
             //@include fc;
             gap: 3rem 1.75rem;
             div{
                 flex-basis: 26%;
                 min-width: 30rem;
                 //margin: 5rem 0;
-                background-color: darken($blue, 8);
+                background-color: #111;
                 padding: 20px;
                 align-items: center;
                 display: flex;
@@ -78,7 +80,7 @@
                     margin-top: 5vh;
                     width: 70%;
                     text-align: justify;
-                    color: rgba(255, 255, 255, 0.56);
+                    color: $yellow;
                 }
             }
         }   
