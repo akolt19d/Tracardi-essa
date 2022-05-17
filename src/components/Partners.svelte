@@ -40,6 +40,8 @@
         {
             width: 70rem;
             max-width: 90%;
+            font-size: 5rem;
+            text-align: center;
             height: 30rem;
             background-color: $blue;
             margin: auto;

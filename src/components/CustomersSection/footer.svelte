@@ -40,53 +40,60 @@
 	</defs>
 </svg>
 <footer>
-	<div class="transition" />
-	<div class="headline">
-		<h3>TRACARDI</h3>
-		<div>
-			<input type="email" placeholder="Your work email" />
-			<button> See how it works </button>
-		</div>
-	</div>
-	<div class="contact">
-		<div class="inner-wrapper">
-			<ul class="ul-wrapper">
-				<h5>ooomagad</h5>
-				<li>'essa'</li>
-				<li>'essa'</li>
-				<li>'essa'</li>
-			</ul>
-			<ul class="ul-wrapper">
-				<h5>ooomagad</h5>
-				<li>'essa'</li>
-				<li>'essa'</li>
-				<li>'essa'</li>
-			</ul>
-			<ul class="ul-wrapper">
-				<h5>ooomagad</h5>
-				<li>'essa'</li>
-				<li>'essa'</li>
-				<li>'essa'</li>
-			</ul>
-		</div>
-		<div>
-			<h3>ooomagad</h3>
-			<h6>essa</h6>
-		</div>
-	</div>
-	<div class="end">
-		<ul class="tos">
-			<li>essa</li>
-			<li>essa</li>
-			<li>essa</li>
-		</ul>
-		<ul class="icons">
-			<li>X</li>
-			<li>X</li>
-			<li>X</li>
-			<li>X</li>
-		</ul>
-	</div>
+
+    <div class="headline">
+        <h3>TRACARDI</h3>
+        <div>
+            <input type="email" placeholder="Your work email">
+            <button>
+                See how it works
+            </button>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="inner-wrapper">
+            <ul class="ul-wrapper">
+                <h5>
+                    navigation
+                </h5>
+                <li>Home</li>
+                <li>How it works</li>
+                <li>Contact</li>
+            </ul>
+            <ul class="ul-wrapper">
+                <h5>
+                    for clients
+                </h5>
+                <li>Documentation</li>
+                <li>Open source</li>
+                <li>Our team</li>
+            </ul>
+            <ul class="ul-wrapper">
+                <h5>
+                    support
+                </h5>
+                <li>Help center</li>
+                <li>Contact us</li>
+            </ul>
+        </div>
+        <div>
+            <h3>ourgmail@gmail.com</h3>
+            <h6>Tracardi</h6>
+        </div>
+    </div>
+    <div class="end">
+        <ul class="tos">
+            <li>Privacy policy</li>
+            <li>Terms of service</li>
+            <li>Website data connection</li>
+        </ul>
+        <ul class="icons">
+            <li>X</li>
+            <li>X</li>
+            <li>X</li>
+            <li>X</li>
+        </ul>
+    </div>
 </footer>
 
 <style lang="scss">

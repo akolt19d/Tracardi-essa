@@ -19,39 +19,38 @@
         <div class="inner-wrapper">
             <ul class="ul-wrapper">
                 <h5>
-                    ooomagad
+                    navigation
                 </h5>
-                <li>'essa'</li>
-                <li>'essa'</li>
-                <li>'essa'</li>
+                <li>Home</li>
+                <li>How it works</li>
+                <li>Contact</li>
             </ul>
             <ul class="ul-wrapper">
                 <h5>
-                    ooomagad
+                    for clients
                 </h5>
-                <li>'essa'</li>
-                <li>'essa'</li>
-                <li>'essa'</li>
+                <li>Documentation</li>
+                <li>Open source</li>
+                <li>Our team</li>
             </ul>
             <ul class="ul-wrapper">
                 <h5>
-                    ooomagad
+                    support
                 </h5>
-                <li>'essa'</li>
-                <li>'essa'</li>
-                <li>'essa'</li>
+                <li>Help center</li>
+                <li>Contact us</li>
             </ul>
         </div>
         <div>
-            <h3>ooomagad</h3>
-            <h6>essa</h6>
+            <h3>ourgmail@gmail.com</h3>
+            <h6>Tracardi</h6>
         </div>
     </div>
     <div class="end">
         <ul class="tos">
-            <li>essa</li>
-            <li>essa</li>
-            <li>essa</li>
+            <li>Privacy policy</li>
+            <li>Terms of service</li>
+            <li>Website data connection</li>
         </ul>
         <ul class="icons">
             <li>X</li>
