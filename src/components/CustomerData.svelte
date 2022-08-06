@@ -101,7 +101,7 @@
 	section {
 		position: relative;
 		@include section-width;
-		margin-top: 20vh;
+		margin-top: 40vh;
 		.cd-text {
 			margin: auto;
 			h3 {
@@ -110,8 +110,7 @@
 				font-size: 340%;
 				margin-bottom: 2rem;
 			}
-			p 
-			{
+			p {
 				max-width: 33rem;
 				margin: auto;
 			}

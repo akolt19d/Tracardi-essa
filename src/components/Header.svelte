@@ -24,8 +24,7 @@
 		@include section-width;
 		text-align: center;
 		// overflow-x: hidden;
-		h1 
-		{
+		h1 {
 			font-size: 400%;
 			color: $blue;
 			font-weight: 500;
@@ -62,8 +61,8 @@
 			}
 		}
 		video {
-			 position: absolute;
-			top: 8vh;
+			position: absolute;
+			top: 20vh;
 			width: 70vw;
 			margin: auto;
 			// display: none;
@@ -79,10 +78,8 @@
 	}
 
 	@media screen and (max-width: 600px) {
-		header 
-		{
-			video 
-			{
+		header {
+			video {
 				display: none;
 			}
 		}
