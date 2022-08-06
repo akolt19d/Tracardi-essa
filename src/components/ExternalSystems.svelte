@@ -1,26 +1,44 @@
 <script>
 	import Transition2 from './svg/transition2.svelte';
+	import { fly } from 'svelte/transition';
+	import { inview } from 'svelte-inview';
+	let visible = false;
+	let options = { rootMargin: '-150px' };
 </script>
 
-<section class="container">
-	<div class="transition">
-		<Transition2 />
-	</div>
-	<h2>INTERGRATE EXTERNAL <span class="white"> SYSTEMS</span></h2>
-	<div class="containerForContent">
-		<img class="obrazek" src="/popular.png" alt="ikonki popularnych firm" />
-		<div class="conForText">
-			<p class="fat">
-				Use the <span class="blue">social media, SaaS, AI</span> to boost your sales. Integrate any system
-				with your e-commerce solution.
-			</p>
-			<p class="small">
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-				been the industry's standard dummy text ever since the 1500s,
-			</p>
-			<a href="/">Explore Tracardi for external systems.</a>
+<section
+	class="container"
+	use:inview={options}
+	on:enter={(event) => {
+		visible = true;
+	}}
+>
+	{#if visible}
+		<div class="transition">
+			<Transition2 />
 		</div>
-	</div>
+		<h2 in:fly={{ x: 1000, duration: 500, delay: 850 }} out:fly={{ duration: 300, delay: 1050 }}>
+			INTERGRATE EXTERNAL <span class="white"> SYSTEMS</span>
+		</h2>
+		<div
+			in:fly={{ x: -800, duration: 500, delay: 850 }}
+			out:fly={{ duration: 500, delay: 1050 }}
+			class="containerForContent"
+		>
+			<img class="obrazek" src="/popular.png" alt="ikonki popularnych firm" />
+			<div class="conForText">
+				<p class="fat">
+					Use the <span class="blue">social media, SaaS, AI</span> to boost your sales. Integrate any
+					system with your e-commerce solution.
+				</p>
+				<p class="small">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+					been the industry's standard dummy text ever since the 1500s,
+				</p>
+				<a href="/">Explore Tracardi for external systems.</a>
+			</div>
+		</div>
+	{/if}
 </section>
 
 <style lang="scss">

@@ -1,37 +1,63 @@
 <script>
 	import Transition5 from './svg/transition5.svelte';
-
 	const partners = ['ibm', 'mac-os-logo', 'windows'];
+	import { fly } from 'svelte/transition';
+	import { inview } from 'svelte-inview';
+	let visible = false;
+	let options = {};
 </script>
 
 <section>
-	<div class="transition">
+	<div
+		class="transition"
+		use:inview={options}
+		on:enter={(event) => {
+			visible = true;
+		}}
+	>
 		<Transition5 />
 	</div>
-	<div class="partner-opinion">
-		<h3>IBM</h3>
-		<div>
+	{#if visible}
+		<div
+			class="partner-opinion"
+			in:fly={{ opacity: 0, x: -500, duration: 500, delay: 150 }}
+			out:fly={{ opacity: 0, duration: 300, delay: 150 }}
+		>
+			<h3>IBM</h3>
 			<div>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea atque accusamus consequuntur
-				</p>
-				reiciendis nobis nostrum quo est dolores vero doloremque libero fugiat, aliquam veritatis sunt
-				exercitationem eum consectetur, unde dignissimos.
+				<div>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea atque accusamus consequuntur
+					</p>
+					reiciendis nobis nostrum quo est dolores vero doloremque libero fugiat, aliquam veritatis sunt
+					exercitationem eum consectetur, unde dignissimos.
+				</div>
+			</div>
+			<div>
+				<div>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit veniam ex voluptatum
+					aperiam libero, blanditiis ratione suscipit qui mollitia corrupti quia maiores minima
+					autem veritatis voluptate accusantium repellat? Voluptas, animi. voluptate
+				</div>
 			</div>
 		</div>
-		<div>
-			<div>
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit veniam ex voluptatum
-				aperiam libero, blanditiis ratione suscipit qui mollitia corrupti quia maiores minima autem
-				veritatis voluptate accusantium repellat? Voluptas, animi. voluptate
-			</div>
-		</div>
-	</div>
-	<ul class="partner-list">
-		{#each partners as partner}
-			<li>
-				<img src="./{partner}.png" alt={partner} />
-			</li>
+	{/if}
+	<ul
+		class="partner-list"
+		use:inview={options}
+		on:enter={(event) => {
+			visible = true;
+		}}
+	>
+		{#each partners as partner, i}
+			{#if visible}
+				<li
+					in:fly={{ y: 500, duration: 500, delay: i * 350 }}
+					out:fly={{ duration: 300, delay: i * 250 }}
+				>
+					<img src="./{partner}.png" alt={partner} />
+				</li>
+			{/if}
 		{/each}
 	</ul>
 </section>

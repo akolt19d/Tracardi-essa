@@ -1,6 +1,10 @@
 <script>
 	import Transition1 from './svg/transition1.svelte';
-
+	import { fly } from 'svelte/transition';
+	import { inview } from 'svelte-inview';
+	let visible = false;
+	let visible2 = false;
+	let options = {};
 	const tabOfData = [
 		{
 			title: 'Frequency caps',
@@ -50,32 +54,56 @@
 <svelte:window on:scroll={parallax} />
 
 <section>
-	<div class="cd-text">
-		<h3>What is <span class="orange">customer data?</span></h3>
-		<p>
-			Every marketing and analytics app runs on the same three types of data: who your users are,
-			what they are doing, and where are they whilst doing it. Collect it once with Tracardi and
-			send it to any tool.
-		</p>
+	<div
+		class="cd-text"
+		use:inview={options}
+		on:enter={(event) => {
+			visible2 = true;
+		}}
+	>
+		{#if visible2}
+			<h3 in:fly={{ opacity: 0 }} out:fly={{ opacity: 0 }}>
+				What is <span class="orange">customer data?</span>
+			</h3>
+			<p in:fly={{ opacity: 0 }} out:fly={{ opacity: 0 }}>
+				Every marketing and analytics app runs on the same three types of data: who your users are,
+				what they are doing, and where are they whilst doing it. Collect it once with Tracardi and
+				send it to any tool.
+			</p>
+		{/if}
 	</div>
+
 	<div>
 		<!-- <hr />
 		<hr /> -->
 	</div>
-	<div class="cards">
-		{#each tabOfData as item}
-			<div class="card">
-				<svg class="svgCom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-					><path d={item.pathToSvg} /></svg
+
+	<div
+		class="cards"
+		use:inview={options}
+		on:enter={(event) => {
+			visible = true;
+		}}
+	>
+		{#each tabOfData as item, i}
+			{#if visible}
+				<div
+					class="card"
+					in:fly={{ opacity: 0, y: 500, duration: 500, delay: i * 150 }}
+					out:fly={{ opacity: 0, duration: 300, delay: i * 150 }}
 				>
-				<h4>{item.title}</h4>
-				<p>
-					{item.Text}
-				</p>
-				{#if item.button}
-					<button> Get more information </button>
-				{/if}
-			</div>
+					<svg class="svgCom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+						><path d={item.pathToSvg} /></svg
+					>
+					<h4>{item.title}</h4>
+					<p>
+						{item.Text}
+					</p>
+					{#if item.button}
+						<button> Get more information </button>
+					{/if}
+				</div>
+			{/if}
 		{/each}
 	</div>
 </section>
