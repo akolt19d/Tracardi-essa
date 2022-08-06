@@ -14,8 +14,8 @@
 	{#if visible}
 		<div
 			class="nocode-wrapper"
-			in:fly={{ opacity: 0, x: -1000, duration: 500, delay: 350 }}
-			out:fly={{ opacity: 0, duration: 300, delay: 150 }}
+			in:fly={{ opacity: 0, x: -1000, duration: 400, delay: 250 }}
+			out:fly={{ opacity: 0, duration: 300, delay: 250 }}
 		>
 			<h3>NO CODE</h3>
 			<p class="hei">NO CODE NO CODE</p>
@@ -23,7 +23,7 @@
 		</div>
 		<div
 			class="inner-wrapper"
-			in:fly={{ opacity: 0, x: -1000, duration: 500, delay: 350 }}
+			in:fly={{ opacity: 0, x: -1000, duration: 400, delay: 250 }}
 			out:fly={{ opacity: 0, duration: 300, delay: 150 }}
 		>
 			<p class="developer">
@@ -33,7 +33,7 @@
 			<button class="btnDev">See how it works</button>
 		</div>
 		<img
-			in:fly={{ opacity: 0, x: 1000, duration: 500, delay: 350 }}
+			in:fly={{ opacity: 0, x: 1000, duration: 400, delay: 250 }}
 			out:fly={{ opacity: 0, duration: 300, delay: 150 }}
 			src="./noCodeMockup.png"
 			alt="No Code Mockup"

@@ -3,7 +3,7 @@
 	import { fly } from 'svelte/transition';
 	import { inview } from 'svelte-inview';
 	let visible = false;
-	let options = { rootMargin: '-150px' };
+	let options = { rootMargin: '-100px' };
 </script>
 
 <section
@@ -17,12 +17,12 @@
 		<div class="transition">
 			<Transition2 />
 		</div>
-		<h2 in:fly={{ x: 1000, duration: 500, delay: 850 }} out:fly={{ duration: 300, delay: 1050 }}>
+		<h2 in:fly={{ x: 1000, duration: 400, delay: 450 }} out:fly={{ duration: 300, delay: 1050 }}>
 			INTERGRATE EXTERNAL <span class="white"> SYSTEMS</span>
 		</h2>
 		<div
-			in:fly={{ x: -800, duration: 500, delay: 850 }}
-			out:fly={{ duration: 500, delay: 1050 }}
+			in:fly={{ x: -800, duration: 400, delay: 450 }}
+			out:fly={{ duration: 400, delay: 1050 }}
 			class="containerForContent"
 		>
 			<img class="obrazek" src="/popular.png" alt="ikonki popularnych firm" />
