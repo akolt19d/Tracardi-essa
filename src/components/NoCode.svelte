@@ -2,7 +2,7 @@
 	import { fly } from 'svelte/transition';
 	import { inview } from 'svelte-inview';
 	let visible = false;
-	let options = {};
+	let options = { rootMargin: '-150px' };
 </script>
 
 <section

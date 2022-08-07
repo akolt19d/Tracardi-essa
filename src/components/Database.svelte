@@ -36,7 +36,7 @@
 	];
 	let visible = false;
 	let isInView;
-	const options = {};
+	let options = { rootMargin: '-150px' };
 </script>
 
 <section class="container">

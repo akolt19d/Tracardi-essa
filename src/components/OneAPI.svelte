@@ -2,9 +2,7 @@
 	import { fly } from 'svelte/transition';
 	import { inview } from 'svelte-inview';
 	let visible = false;
-	let options = {
-		rootMargin: '-100px'
-	};
+	let options = { rootMargin: '-150px' };
 
 	const files = ['android-logo', 'js', 'apple', 'php', 'python', 'ruby'];
 </script>
