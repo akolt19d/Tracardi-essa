@@ -4,7 +4,7 @@
 	import { inview } from 'svelte-inview';
 	let visible = false;
 	let visible2 = false;
-	let options = { rootMargin: '-150px' };
+	let options = { rootMargin: '-250px' };
 	const tabOfData = [
 		{
 			title: 'Frequency caps',

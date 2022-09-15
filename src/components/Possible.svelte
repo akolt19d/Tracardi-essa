@@ -19,7 +19,7 @@
 		}
 	];
 	let visible = false;
-	let options = { rootMargin: '-100px' };
+	let options = { rootMargin: '-200px' };
 </script>
 
 <section class="container">
